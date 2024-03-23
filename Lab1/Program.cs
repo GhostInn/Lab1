@@ -5,11 +5,11 @@ public class Program
     {
         List<Aircraft> aircrafts = new List<Aircraft>
             {
-                new FighterJet("F-22", 2414, 19812, 1361, 2414),
-                new Helicopter("Apache", 287, 6400, 12, 2),
-                new Bomber("B-2", 1010, 16764, 18144, 524),
-                new Convertiplane("V-22", 518, 7620, 152, 162),
-                new Quadcopter("DJI Phantom 4", 72, 19685, "Consumer", "Wi-Fi")
+                new FighterJet("Су-27", 1, 1, 1, 1),
+                new Helicopter("Ми-24", 1, 1, 1, 1),
+                new Bomber("Ту-4", 1, 1, 1, 1),
+                new Convertiplane("Ми-30", 1, 1, 1, 1),
+                new Quadcopter("Квадрокоптер", 1, 1, "Тип", "Связь")
             };
 
         List<Aircraft> verticalTakeoffAircrafts = new List<Aircraft>();
@@ -26,13 +26,13 @@ public class Program
                 horizontalTakeoffAircrafts.Add(aircraft);
             }
         }
-        Console.WriteLine("Vertical Takeoff Aircrafts:");
+        Console.WriteLine("Системы с вертикальным взлётом:");
         foreach (var aircraft in verticalTakeoffAircrafts)
         {
             Console.WriteLine($"- {aircraft.Name}");
         }
 
-        Console.WriteLine("\nHorizontal Takeoff Aircrafts:");
+        Console.WriteLine("\nСистемы с горизонтальным взлетом:");
         foreach (var aircraft in horizontalTakeoffAircrafts)
         {
             Console.WriteLine($"- {aircraft.Name}");
