@@ -37,8 +37,8 @@ public class Program
         
         
         // Красивая консоль
-        Console.ForegroundColor = ConsoleColor.Green;
         Console.ForegroundColor = ConsoleColor.Black;
+        Console.BackgroundColor = ConsoleColor.Green;
         Console.Clear(); // очистить консоль
         
         
