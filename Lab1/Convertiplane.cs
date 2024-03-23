@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    public class Helicopter : Aircraft
+    public class Convertiplane : Aircraft
     {
         public int AscentSpeed { get; set; }
-        public int NumberOfRotors { get; set; }
+        public int Wingspan { get; set; }
 
-        public Helicopter(string name, int maxHorizontalSpeed, int maxAltitude, int ascentSpeed, int numberOfRotors)
+        public Convertiplane(string name, int maxHorizontalSpeed, int maxAltitude, int ascentSpeed, int wingspan)
             : base(name, maxHorizontalSpeed, maxAltitude)
         {
             AscentSpeed = ascentSpeed;
-            NumberOfRotors = numberOfRotors;
+            Wingspan = wingspan;
         }
     }
 }

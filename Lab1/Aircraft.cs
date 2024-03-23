@@ -8,8 +8,15 @@ namespace Lab1
 {
     public abstract class Aircraft
     {
-        public int Maximum_Horizontal_Speed { get; set; }
-        public int Maximum_Flight_Altitude { get; set; }
+        public string Name { get; set; }
+        public int MaxHorizontalSpeed { get; set; }
+        public int MaxAltitude { get; set; }
 
+        public Aircraft(string name, int maxHorizontalSpeed, int maxAltitude)
+        {
+            Name = name;
+            MaxHorizontalSpeed = maxHorizontalSpeed;
+            MaxAltitude = maxAltitude;
+        }
     }
 }

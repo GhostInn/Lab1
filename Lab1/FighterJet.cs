@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    public class Bomber : Aircraft
+    public class FighterJet : Aircraft
     {
-        public int MaxPayload { get; set; }
         public int Wingspan { get; set; }
+        public int ThrustSpeed { get; set; }
 
-        public Bomber(string name, int maxHorizontalSpeed, int maxAltitude, int maxPayload, int wingspan)
+        public FighterJet(string name, int maxHorizontalSpeed, int maxAltitude, int wingspan, int thrustSpeed)
             : base(name, maxHorizontalSpeed, maxAltitude)
         {
-            MaxPayload = maxPayload;
             Wingspan = wingspan;
+            ThrustSpeed = thrustSpeed;
         }
     }
 }
