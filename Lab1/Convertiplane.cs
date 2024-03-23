@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    public class Convertiplane : Aircraft
+    public class Convertiplane : VerticalFlyLand
     {
         public int AscentSpeed { get; set; }
         public int Wingspan { get; set; }

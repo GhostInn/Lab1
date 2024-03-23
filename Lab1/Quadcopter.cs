@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    public class Quadcopter : Aircraft
+    public class Quadcopter : VerticalFlyLand
     {
         public string Type { get; set; }
         public string ControlProtocol { get; set; }
