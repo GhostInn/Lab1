@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Drawing;
+using System.Text;
 using Lab1;
 public class Program
 {
@@ -32,7 +33,18 @@ public class Program
             Console.WriteLine($"{aircraft.Name}");
         }
 
+        
+        
+        
+        // Красивая консоль
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Black;
+        Console.Clear(); // очистить консоль
+        
+        
+        /////////////////////////
         Console.WriteLine("\n-----------------------\nTermolks idea:\n");
+        
         
         // Улучшение кода для другана-кореша:
         List<Aircraft> _aircrafts = new List<Aircraft>
