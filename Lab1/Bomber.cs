@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    public class Fighter : Aircraft
+    public class Bomber : Aircraft
     {
+        public int Maximum_Payload { get; set; }
         public int Wingspan { get; set; }
-        public int Afterburner_Speed{ get; set; }
     }
 }
