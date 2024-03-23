@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    public class Helicopter : Aircraft
+    public class Helicopter : VerticalFlyLand
     {
         public int AscentSpeed { get; set; }
         public int NumberOfRotors { get; set; }
