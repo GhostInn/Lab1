@@ -21,6 +21,7 @@ namespace Lab1
             MaxHorizontalSpeed = maxHorizontalSpeed;
             MaxAltitude = maxAltitude;
         }
+        // some comment
         
         public abstract void Land();
     }
