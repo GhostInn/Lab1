@@ -15,6 +15,7 @@ public class Program
 
         List<Aircraft> horizontalTakeoffAircrafts = new List<Aircraft>
             {
+                new Convertiplane("Ми-30", 1, 1, 1,1),
                 new FighterJet("Су-27", 1, 1, 1, 1),
                 new Bomber("Ту-4", 1, 1, 1, 1),
             };
@@ -64,10 +65,10 @@ public class Program
         
         foreach (var aircraft in _aircrafts)
         {
-            if (aircraft is VerticalFlyLand)
+            if (aircraft is VerticalFlyLand || aircraft.GetType().GetInterface("IFlyebleVertical") != null)
                 _flyInfoV.Append($"{aircraft.Name}\n");
             
-            if (aircraft is HorizontalFlyLand)
+            if (aircraft is HorizontalFlyLand || aircraft.GetType().GetInterface("IFlyebleHorizontal") != null)
                 _flyInfoH.Append($"{aircraft.Name}\n");
         }
 
